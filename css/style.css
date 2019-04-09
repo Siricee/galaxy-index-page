@@ -1,0 +1,192 @@
+@font-face {
+  font-family: 'lombok';
+  src: url("font/Lombok.otf") format('truetype');
+  font-style: normal;
+  font-weight: normal
+}
+
+html {
+  height: 100%;
+  font: 625%/1 Helvetica, arial, sans-serif
+}
+
+body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: #000;
+  overflow: hidden
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  font-weight: 100
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none
+}
+
+em, i {
+  font-style: normal
+}
+
+a, a:active, a:link, a:visited {
+  color: #fff;
+  text-decoration: none;
+  outline: none
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  opacity: 0;
+  transition: all 3s
+}
+
+.sec-1, .sec-2 {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  transition: all .5s;
+}
+
+.sec-1.up, .sec-2.up {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0)
+}
+
+.sec-1.down, .sec-2.down {
+  transform: translate3d(0, -100%, 0);
+  -webkit-transform: translate3d(0, -100%, 0)
+}
+
+.sec-1 .content {
+  z-index: 1;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.sec-1 .content h1 {
+  margin-bottom: .18rem;
+  transition: all 1.5s;
+  font: .36rem 'lombok', Helvetica, arial, sans-serif;
+  line-height: 1;
+  opacity: 0
+}
+
+.sec-1 .content h2 {
+  margin-bottom: .22rem;
+  font-size: .22rem;
+  letter-spacing: .025rem;
+}
+
+.sec-1 .content h2 em {
+  position: relative;
+}
+
+.sec-1 .content h2 em span {
+  transition: all .3s;
+}
+
+.sec-1 .content h2 em span.replacer {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  -webkit-transform: translateY(100%)
+}
+
+.sec-1 .content a {
+  display: block;
+  line-height: 2;
+  letter-spacing: .02rem;
+  font-size: .16rem;
+  transition: all .2s;
+}
+
+.sec-1 .content a:hover {
+  color: #f99
+}
+
+.sec-2 .content {
+  text-transform: uppercase;
+  letter-spacing: .02rem;
+}
+
+.sec-2 .content p {
+  margin-bottom: .28rem;
+  font-size: .16rem;
+  line-height: 2
+}
+
+.sec-2 .content .block {
+  z-index: 1;
+  width: 3rem;
+  margin-bottom: .14rem;
+  overflow: hidden;
+  clear: both;
+}
+
+.sec-2 .content .block h3 {
+  float: left;
+  overflow: hidden;
+  width: 60%;
+  height: .24rem;
+  line-height: .24rem;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: .16rem;
+}
+
+.sec-2 .content .block h3::after {
+  content: '\00a0\00a0\00a0.................................'
+}
+
+.sec-2 .content .block ul {
+  float: right;
+  box-sizing: border-box;
+  width: 40%;
+  padding-left: .15rem;
+  text-align: left;
+  font-size: .14rem;
+}
+
+.sec-2 .content .block ul li {
+  height: .24rem;
+  line-height: .26rem;
+}
+
+.sec-2 .content .block ul li a {
+  float: left;
+  height: 100%;
+  transition: all .2s;
+}
+
+.sec-2 .content .block ul li a:hover {
+  color: #f99
+}
+
+@media screen and (max-device-width:667px) {
+  .sec-2 .content .block {
+    margin-left: auto;
+    margin-right: auto
+  }
+}
