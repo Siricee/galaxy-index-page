@@ -13,3 +13,5 @@ This is a static web page can be used as a blog links list,decorated with Galaxy
 #### Background Music
 
 [2019.4.9 网易云音乐日推：Electus-Nero](https://music.163.com/song?id=406072455&userid=388816944)
+
+注：移动端浏览器自动屏蔽audio的autoplay属性，为了节省移动端的流量。
